@@ -1,0 +1,68 @@
+
+:root {
+    --warna-utama: #175cd3;
+    --warna-latar: #f2f5fa;
+    --warna-putih: #ffffff;
+    --jarak: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--warna-latar);
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 550px;
+}
+
+.form-card {
+    background-color: var(--warna-putih);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--warna-utama);
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: var(--warna-utama);
+    border-color: var(--warna-utama);
+    padding: 11px;
+}
+
+.btn-primary:hover {
+    background-color: #1249a8;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,97 @@
+:root {
+    --warna-utama: #0f0707;
+    --warna-latar: #f1f5fb;
+    --warna-kartu: #ffffff;
+    --jarak: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--warna-latar);
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: var(--warna-utama);
+    color: rgb(253, 252, 252);
+    text-align: center;
+    padding: 25px;
+}
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+.profil {
+    background: var(--warna-kartu);
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: var(--jarak);
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.profil img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--warna-utama);
+}
+
+.profil h2 {
+    color: var(--warna-utama);
+}
+
+.data,
+.tentang {
+    background: var(--warna-kartu);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: var(--jarak);
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.data h2,
+.tentang h2 {
+    color: var(--warna-utama);
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item span {
+    font-weight: bold;
+    min-width: 140px;
+}
+
+.item p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+footer {
+    background: #1c2f4d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+@media (max-width: 600px) {
+    .item {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .profil h2 {
+        font-size: 24px;
+    }
+}
